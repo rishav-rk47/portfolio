@@ -1,0 +1,75 @@
+.card {
+    border-radius: 15px;
+    box-shadow:1px 0px 5px 2px #14192b;
+    background-color: #ffffff;
+    width: 300px; /* Adjust width as needed */
+    height: 400px;
+    margin: 20px; /* Adjust margin as needed */
+    overflow: hidden;
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Adjust color as needed */
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-hollow{
+    height: 10px;
+    width: 80px;
+    border: 2px,solid,#14192b;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .image-container {
+    text-align: center;
+    height: 65%;
+    color: rgb(99, 99, 99);
+   
+    padding: 1rem;
+    
+  }  
+  .bottom-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    height: 15%;
+  }
+  
+  .expertise,
+  .shared-pbt {
+    color: #007BFF; /* Replace with actual color codes */
+    font-size: 14px; /* Adjust size as needed */
+  }
+  
+  .skills-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+
+  .skills-name{
+    width: 100%;
+    text-align: left;
+  }
+  .skills-progress{
+    width: 100%;
+  }
+
+  @media (max-width: 768px){
+    .card{
+        width: 70%;
+    }
+
+}

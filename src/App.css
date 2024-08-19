@@ -1,0 +1,51 @@
+
+:root {
+  --primary-color: #14192b; /* Dark background */
+  --secondary-color: #1d2539; /* Slightly lighter dark background */
+  --accent-color: #5e5cf7; /* Purple accent color */
+  --text-color: #ffffff; /* White text */
+  --highlight-color: #b1f027; /* Neon green for buttons or highlights */
+  --grey-color: #65656a; /* Grey for icons or secondary text */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+
+
+ .footer {
+  background-color: var(--secondary-color);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  color: var(--grey-color);
+}
+
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+
+
+@media (max-width: 768px) {
+
+  h2 {
+      font-size: 2rem;
+  }
+
+  .container {
+      padding: 10px;
+  }
+}
+

@@ -1,0 +1,121 @@
+.header {
+    background-color: #141a2f;
+    padding: 10px 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top:0;
+    width: 100%;
+    position: fixed;
+}
+
+.header-logo h1 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.header-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Hide the hamburger menu on desktop */
+.hamburger {
+    display: none;
+}
+
+/* Desktop view */
+.header-menu nav {
+    display: flex;
+    margin-right: 5rem;
+}
+
+.header-menu nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-menu nav ul li {
+    margin-left: 20px;
+}
+
+.header-menu nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.header-menu nav ul li a:hover {
+    color: #a0e7e5;
+    transition: color 0.3s ease;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-right: 2rem;
+    }
+
+    .hamburger div {
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: background-color 0.3s ease;
+    }
+
+    .hamburger:hover div {
+        background-color: #a0e7e5;
+        transition: background-color 0.3s ease;
+    }
+
+    .header-menu nav {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        transition-delay: 5s;
+        width: 200px;
+        background-color: rgba(20, 26, 47, 0.9); /* Transparent background */
+        border-radius: 4px;
+        display: none;
+        flex-direction: column;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .header-menu nav.open {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header-menu nav ul {
+        display: block;
+    }
+
+    .header-menu nav ul li {
+        margin: 0;
+        padding: 10px 20px;
+    }
+
+    .header-menu nav ul li a {
+        font-size: 16px;
+        transition: color 0.3s ease;
+    }
+
+    /* Hover effect for mobile menu items */
+    .header-menu nav ul li a:hover {
+        color: #a0e7e5;
+    }
+}

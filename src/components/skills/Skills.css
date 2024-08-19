@@ -1,0 +1,17 @@
+.skills-container-top{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* creates 3 equal columns */
+
+}
+
+@media (max-width: 768px){
+    .skills-container-top{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+    }
+
+}

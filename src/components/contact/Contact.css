@@ -1,0 +1,54 @@
+
+.heading {
+    font-size: 2.8em;
+    margin-bottom: 40px;
+    color: #2C3E50;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.contact-info {
+    font-size: 1.2em;
+    color: #34495e;
+    margin-bottom: 20px;
+    line-height: 2;
+    width: 40%;
+    height: 280px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid #D3D3D3;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-link {
+    color: #16a085;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-link:hover {
+    color: #1abc9c;
+}
+
+.contact-detail {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2.2em;
+    }
+
+    .contact-info {
+        font-size: 1em;
+        height: max-content;
+        width: 90%;
+    }
+}

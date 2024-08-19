@@ -1,0 +1,84 @@
+
+
+.heading {
+    font-size: 2.8em;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #2C3E50;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.education-card {
+    width: 40%;
+    height: 280px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid #D3D3D3;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.education-institution {
+    font-size: 1.6em;
+    color: #34495e;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.education-degree {
+    font-size: 1.3em;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.education-duration {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.education-cgpa, .education-percentage {
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+.education-cgpa span, .education-percentage span {
+    font-weight: bold;
+    color: #16a085;
+}
+
+@media (max-width: 768px){
+    .education-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+    }
+
+    .education-card {
+        width: 90%;
+        height: max-content;
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        border: 1px solid #D3D3D3;
+
+    }
+}

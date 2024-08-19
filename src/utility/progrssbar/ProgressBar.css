@@ -1,0 +1,14 @@
+.progress-bar {
+    margin-top: 5px;
+    width: 90%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #f44336, #ffeb3b, #4caf50);
+    border-radius: 5px;
+}
